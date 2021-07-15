@@ -1,0 +1,21 @@
+Products Database
+-----------------
+CREATE TABLE products (
+    id char(10) not null UNIQUE,
+    name varchar(30),
+    description text,
+    price float(2),
+    unit char(10),
+    remain float(2),
+    PRIMARY KEY (id)
+    )
+
+
+----------------------------------------------------------------
+Admin Database
+--------------
+create TABLE admin(
+    name varchar(30), 
+    username char(10),
+    password char(10)
+    )
