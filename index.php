@@ -8,7 +8,7 @@
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery Shop</title>
+    <title>e-grocery</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -358,7 +358,7 @@
         <div class="footer-line m-4"></div>
 
         <div class="copy-right text-center">
-            All rights reserved &copy;<a href="https://github.com/saiful-70/" class="text-danger" target="_blank">E-grocery's</a> team, 2021.
+            All rights reserved &copy;<a href="https://github.com/saiful-70/" class="text-success" target="_blank">E-grocery's</a> team, 2021.
         </div>
 
         </div>

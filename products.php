@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>e-grocery - products</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,10 +34,10 @@
                         <li class="navbar__item"> <a href="index.php#about" class="navbar__item--link"> About</a> </li>
                         <li class="navbar__item"> <a href="#contact" class="navbar__item--link"> Contact </a> </li>
                         <li class="navbar__item" >
-                            <a href="register.php" class="navbar__item--link" > Register </a>
+                            <a href="register.php" class="navbar__item--link" target="_blank" > Register </a>
                         </li>
                         <li class="navbar__item" >
-                            <a href="admin" class="navbar__item--link" > Admin? </a>
+                            <a href="admin" class="navbar__item--link" target="_blank"> Admin? </a>
                         </li>
                     </ul>
                 </div>
@@ -170,7 +170,7 @@
         <div class="footer-line m-4"></div>
 
         <div class="copy-right text-center">
-            All rights reserved &copy;E-shop team, 2021.
+            All rights reserved &copy;<a href="https://github.com/saiful-70/" class="text-success" target="_blank">E-grocery's</a> team, 2021.
         </div>
 
         </div>
