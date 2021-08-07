@@ -443,6 +443,7 @@ About
 .social-link:active,
 .social-link:hover {
     color: #ee5253;
+    transform: scale(1.05);
 }
 
 
