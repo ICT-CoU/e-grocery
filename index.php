@@ -89,20 +89,8 @@
 </div>
 <!-- modal end -->
 
-    <!-- <a href="#">
-        <div class="cart" id="cart">
-            <div class="cart-items" id="cart-items">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i> <br>
-                <span>0 items</span>
-            </div>
-            <div class="cart-price" id="cart-price">
-                <span>$ 0</span>
-            </div>
-        </div>
-    </a> -->
-
     <header class="header">
-    <h1 class="heading-primary">
+        <h1 class="heading-primary">
             <span class="head-span">
                 <i class="fa fa-check-circle" aria-hidden="true"></i> Meats & Fish.
             </span>
@@ -250,9 +238,9 @@
                                 Department of ICT, <br> Comilla University
                             </p>
                             <ul class="social">
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="https://www.facebook.com/tasmisrajahan.toma" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -269,9 +257,9 @@
                                 Department of ICT, <br> Comilla University
                             </p>
                             <ul class="social">
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="https://www.facebook.com/saiful70.me/" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -288,9 +276,9 @@
                                 Department of ICT, <br> Comilla University
                             </p>
                             <ul class="social">
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="https://www.facebook.com/saheb.babu.921230" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -307,9 +295,9 @@
                                 Department of ICT, <br> Comilla University
                             </p>
                             <ul class="social">
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="https://www.facebook.com/mahmud.imran.90834" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -326,9 +314,9 @@
                                 Department of ICT, <br> Comilla University
                             </p>
                             <ul class="social">
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li class="social-item"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="https://www.facebook.com/profile.php?id=100006465457818" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="social-item"><a href="#about" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -346,7 +334,7 @@
                             Contact With Us
                         </h3>
                         <ul>
-                            <li> <i class="fa fa-envelope"></i> e-shop@example.com</li>
+                            <li> <i class="fa fa-envelope"></i> saiful70.me@gmail.com</li>
                             <li><i class="fa fa-phone"></i> 01234567899 </li>
                         </ul>
                     </div>
@@ -370,7 +358,7 @@
         <div class="footer-line m-4"></div>
 
         <div class="copy-right text-center">
-            All rights reserved &copy;E-shop team, 2021.
+            All rights reserved &copy;<a href="https://www.facebook.com/saiful70.me/" class="text-light">E-grocery's</a> team, 2021.
         </div>
 
         </div>
