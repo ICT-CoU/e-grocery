@@ -36,10 +36,10 @@
                         <li class="navbar__item"> <a href="#about" class="navbar__item--link"> About </a> </li>
                         <li class="navbar__item"> <a href="#contact" class="navbar__item--link"> Contact </a> </li>
                         <li class="navbar__item">
-                            <a href="register.php" class="navbar__item--link"> Register </a>
+                            <a href="register.php" class="navbar__item--link" target="_blank"> Register </a>
                         </li>
                         <li class="navbar__item" >
-                            <a href="admin" class="navbar__item--link" > Admin? </a>
+                            <a href="admin" class="navbar__item--link" target="_blank"> Admin? </a>
                         </li>
                     </ul>
                 </div>
@@ -207,8 +207,8 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <a href="products.php" class="btn">
-                        See More...
+                    <a href="products.php" class="btn" target="_blank">
+                        Order More...
                     </a>
                 </div>
             </div>
@@ -358,7 +358,7 @@
         <div class="footer-line m-4"></div>
 
         <div class="copy-right text-center">
-            All rights reserved &copy;<a href="https://www.facebook.com/saiful70.me/" class="text-light">E-grocery's</a> team, 2021.
+            All rights reserved &copy;<a href="https://github.com/saiful-70/" class="text-danger" target="_blank">E-grocery's</a> team, 2021.
         </div>
 
         </div>
