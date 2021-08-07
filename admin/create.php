@@ -1,4 +1,5 @@
 <?php
+ob_start();
 // Include config file
 require_once "config.php";
  
@@ -69,7 +70,7 @@ if(isset($_POST['submit'])){
 
         $image_err = "";
         $imageUploadERROR = FALSE;
-        $FOLDER = "uploads/";
+        $FOLDER = "uploads/products/";
         if ($_FILES["f"]["name"] && $_FILES["f"]["error"] == 0) {
             // uploaded file is OK
             
@@ -92,7 +93,7 @@ if(isset($_POST['submit'])){
         // Prepare an insert statement
         $sql = "INSERT INTO products (id, image, name, description, price, unit, remain) VALUES ('$id', '$image', '$name', '$description', '$price', '$unit', '$remain')";
         if (mysqli_query($link, $sql)) {
-            header("Location: home.php");
+            header("Location: products.php#products");
         } else {
             echo "Error: " . $sql . ":-" . mysqli_error($link);
         }

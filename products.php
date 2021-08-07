@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery Shop</title>
+    <title>Sign up</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <!-- stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
 </head>
 
 <body>
@@ -24,22 +25,27 @@
         <div class="row">
             <nav class="nav">
                 <div class="col col-md-3 logo">
-                    <span>E-Shop</span>
+                <a href="#"><span>e</span>-Grocery</a>
                 </div>
                 <div class="col col-md-9">
                     <ul class="nav-bar">
                         <li class="navbar__item"> <a href="index.php" class="navbar__item--link"> Home </a> </li>
-                        <li class="navbar__item"> <a href="index.php#services" class="navbar__item--link"> Our Services </a> </li>
-                        <li class="navbar__item"> <a href="index.php#products" class="navbar__item--link"> Products </a> </li>
-                        <li class="navbar__item"> <a href="index.php#about" class="navbar__item--link"> About Us</a> </li>
+                        <li class="navbar__item"> <a href="index.php#services" class="navbar__item--link"> Services </a> </li>
+                        <li class="navbar__item"> <a href="index.php#about" class="navbar__item--link"> About</a> </li>
                         <li class="navbar__item"> <a href="#contact" class="navbar__item--link"> Contact </a> </li>
+                        <li class="navbar__item" >
+                            <a href="register.php" class="navbar__item--link" > Register </a>
+                        </li>
+                        <li class="navbar__item" >
+                            <a href="admin" class="navbar__item--link" > Admin? </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
 
-    <!-- modal start -->
+    <!-- cart modal start -->
         <div class="cart" id="cart" data-toggle="modal" data-target="#cart-modal">
             <div class="cart-items" id="cart-items">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> <br>
@@ -51,14 +57,14 @@
         </div>
 
     <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Your Selected Products</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Your Selected Products</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
       <div class="modal-body">
       <table class="table table-striped">
         <thead>
@@ -79,7 +85,7 @@
     </div>
   </div>
 </div>
-<!-- modal end -->
+<!-- cart modal end -->
 
     <section class="products all-products" id="products">
         <div class="container">
@@ -108,7 +114,7 @@
 
                                     echo '<div class="product-card">';
 
-                                        echo '<img src="./admin/uploads/' . $row['image'] . '" alt="' . $row['image']. '" class="product-image">';
+                                        echo '<img src="./admin/uploads/products/' . $row['image'] . '" alt="' . $row['image']. '" class="product-image">';
 
                                         echo '<h5 class="product-name" id="product-name">'. $row['name']. '</h5>';
 
@@ -171,7 +177,7 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

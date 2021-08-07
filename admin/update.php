@@ -1,4 +1,5 @@
 <?php
+ob_start();
 // Include config file
 require_once "config.php";
  
@@ -84,7 +85,7 @@ while($row = mysqli_fetch_array($result)) {
     
         $image_err = "";
         $imageUploadERROR = FALSE;
-        $FOLDER = "uploads/";
+        $FOLDER = "uploads/products/";
         if ($_FILES["f"]["name"] && $_FILES["f"]["error"] == 0) {
             // uploaded file is OK
             
@@ -116,7 +117,7 @@ while($row = mysqli_fetch_array($result)) {
             $id = $_POST['id'];
             $sql = "UPDATE products SET id = '$id', image = '$image', name = '$name', description = '$description', price = '$price', unit = '$unit', remain = '$remain' where id = '$id'";
             if (mysqli_query($link, $sql)) {
-                header("Location: home.php");
+                header("Location: products.php#products");
             } else {
                 echo "Error: " . $sql . ":-" . mysqli_error($link);
             }
@@ -203,7 +204,7 @@ while($row = mysqli_fetch_array($result)) {
                             </div>
                         </div>
                         <input type="submit" class="btn btn-warning" value="Update" name="update">
-                        <a href="home.php" class="btn btn-danger">Cancel</a>
+                        <a href="products.php#products" class="btn btn-danger">Cancel</a>
                     </form>
                 </div>
             </div>

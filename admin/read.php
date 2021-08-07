@@ -14,7 +14,6 @@ while($row = mysqli_fetch_array($result)) {
     $unit = $row['unit'];
     $remain = $row['remain'];
 }
-
     // Close connection
     mysqli_close($link);
 
@@ -53,7 +52,7 @@ while($row = mysqli_fetch_array($result)) {
                                 class="text-danger">#<?php echo $id; ?></span>
 
                         </h3>
-                        <?php echo '<img src="./uploads/' . $image . '" alt="' . $image. '"
+                        <?php echo '<img src="./uploads/products/' . $image . '" alt="' . $image. '"
                                 class="prod-image">';?>
                     </div>
                 </div>
@@ -81,10 +80,10 @@ while($row = mysqli_fetch_array($result)) {
                             <div><?php echo $unit; ?></div>
                         </div>
                         <div>
-                            <a href="home.php" class="btn btn-primary mt-3">Back</a>
+                            <a href="products.php#products" class="btn btn-primary mt-3">Back</a>
                             <?php
                             echo '<a href="update.php?id=' . $id . '" class="btn btn-warning mt-3 mr-1">Update</a>';
-                            echo '<a href="delete.php?id=' . $id . '" class="btn btn-danger mt-3">Delete</a>'; 
+                            echo '<a href="delete-product.php?id=' . $id . '" class="btn btn-danger mt-3">Delete</a>'; 
                             ?>
                         </div>
                     </div>

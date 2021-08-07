@@ -5,6 +5,7 @@
     <!-- icon font -->
     <script src="https://use.fontawesome.com/c0bbe922da.js"></script>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Shop</title>
@@ -16,15 +17,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <!-- stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <div class="container-fluid">
         <div class="row">
             <nav class="nav">
                 <div class="col col-md-3 logo">
-                    <span>E-Shop</span>
+                <a href="#"><span>e</span>-Grocery</a>
                 </div>
                 <div class="col col-md-9">
                     <ul class="nav-bar">
@@ -33,6 +35,12 @@
                         <li class="navbar__item"> <a href="#products" class="navbar__item--link"> Products </a> </li>
                         <li class="navbar__item"> <a href="#about" class="navbar__item--link"> About </a> </li>
                         <li class="navbar__item"> <a href="#contact" class="navbar__item--link"> Contact </a> </li>
+                        <li class="navbar__item">
+                            <a href="register.php" class="navbar__item--link"> Register </a>
+                        </li>
+                        <li class="navbar__item" >
+                            <a href="admin" class="navbar__item--link" > Admin? </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -94,18 +102,19 @@
     </a> -->
 
     <header class="header">
-            <h1 class="heading-primary">
-                <span>
-                    <i class="fa fa-check-circle" aria-hidden="true"></i> Meats & Fish.
-                </span>
-                <span><i class="fa fa-check-circle" aria-hidden="true"></i> Groceries.</span>
-                <span><i class="fa fa-check-circle" aria-hidden="true"></i> Vegetables.</span>
-                <span><i class="fa fa-check-circle" aria-hidden="true"></i> Fruits.</span>
-                <a href="#products" class="btn">
-                    Buy Now <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </a>
-                
-            </h1>
+    <h1 class="heading-primary">
+            <span class="head-span">
+                <i class="fa fa-check-circle" aria-hidden="true"></i> Meats & Fish.
+            </span>
+            <span class="head-span"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                Groceries.</span>
+            <span class="head-span"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                Vegetables.</span>
+            <span class="head-span"><i class="fa fa-check-circle" aria-hidden="true"></i> Fruits.</span>
+            <a href="#products" class="btn">
+                Buy Now <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+        </h1>
     </header>
 
     <section class="services" id="services">
@@ -188,7 +197,7 @@
 
                                     echo '<div class="product-card">';
 
-                                        echo '<img src="./admin/uploads/' . $row['image'] . '" alt="' . $row['image']. '" class="product-image">';
+                                        echo '<img src="./admin/uploads/products/' . $row['image'] . '" alt="' . $row['image']. '" class="product-image">';
 
                                         echo '<h5 class="product-name" id="product-name">'. $row['name']. '</h5>';
 
@@ -223,7 +232,7 @@
             <div class="row">
                 <div class="col">
                     <h2 class="heading-secondary">
-                        Our Teams Members
+                        Who We Are
                     </h2>
                 </div>
             </div> 
@@ -232,7 +241,7 @@
 
                 <div class="col-md-2">
                     <div class="person">
-                        <img class="person-image" src="./images/toma.jpeg" alt="alvee">
+                        <img class="person-image" src="./images/avatar/toma.jpeg" alt="toma">
                         <div class="person-body">
                             <h4 class="heading-4 font-weight-bold">
                                 Tasrina Jahan Toma
@@ -251,7 +260,7 @@
                 
                 <div class="col-md-2">
                     <div class="person">
-                        <img class="person-image" src="./images/saiful.jpg" alt="alvee">
+                        <img class="person-image" src="./images/avatar/saiful.jpg" alt="saiful">
                         <div class="person-body">
                             <h4 class="heading-4 font-weight-bold">
                                 Saiful Islam
@@ -270,7 +279,7 @@
 
                 <div class="col-md-2">
                     <div class="person">
-                        <img class="person-image" src="./images/babu.jpg" alt="alvee">
+                        <img class="person-image" src="./images/avatar/babu.jpg" alt="babu">
                         <div class="person-body">
                             <h4 class="heading-4 font-weight-bold">
                                 Saheb Babu Sheikh
@@ -289,7 +298,7 @@
 
                 <div class="col-md-2">
                     <div class="person">
-                        <img class="person-image" src="./images/imran.jpg" alt="alvee">
+                        <img class="person-image" src="./images/avatar/imran.jpg" alt="imran">
                         <div class="person-body">
                             <h4 class="heading-4 font-weight-bold">
                                 Mahmud Imran
@@ -308,7 +317,7 @@
 
                 <div class="col-md-2">
                     <div class="person">
-                        <img class="person-image" src="./images/alvee.jpg" alt="alvee">
+                        <img class="person-image" src="./images/avatar/alvee.jpg" alt="alvee">
                         <div class="person-body">
                             <h4 class="heading-4">
                                 Alvee Khandoker
@@ -368,7 +377,7 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

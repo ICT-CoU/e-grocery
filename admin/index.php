@@ -1,4 +1,5 @@
 <?php
+ob_start();
 // Include config file
 require_once "config.php";
 
@@ -44,7 +45,7 @@ if(isset($_POST['login'])){
         // }
 
         if ($count) {
-            header("Location: home.php");
+            header("Location: users.php");
         } else {
             header("Location: error.php");
         }
@@ -98,7 +99,7 @@ if(isset($_POST['login'])){
                         <div class="row">
                             <div class="col-md-6 offset-md-3">
                         <input type="submit" class="btn btn-primary" value="Login" name="login">
-                        <a href="home.php" class="btn btn-danger">Cancel</a>
+                        <a href="../index.php" class="btn btn-danger">Back to Home</a>
                         </div>
                             </div>
                     </form>
