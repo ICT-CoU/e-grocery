@@ -3,7 +3,7 @@
 
 </br>
 
-# Take a look
+## Take a look
 
 ### **[Click to Explore Live! ](http://e-grocery10.000webhostapp.com/)**
 
@@ -13,7 +13,7 @@
 
 </br>
 
-# Run in your local server
+## Run on your local server
 
 * ### [Click to download the zip file! ](https://github.com/saiful-70/e-grocery/archive/refs/heads/main.zip)(file size is about 30mb)
 
@@ -27,7 +27,7 @@
 * Go to __https://localhost/e-grocery__ and see the output
 * For database management go to __https://localhost/e-grocery/admin__ and take some __CRUD__ operation.
 
-# Tools used
+## Tools used
 * __BOOTSTRAP__ for layout and some tools
 * __MYSQL__ for database
 * __PHP__ as backend language
