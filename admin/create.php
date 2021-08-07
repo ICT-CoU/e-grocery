@@ -93,7 +93,7 @@ if(isset($_POST['submit'])){
         // Prepare an insert statement
         $sql = "INSERT INTO products (id, image, name, description, price, unit, remain) VALUES ('$id', '$image', '$name', '$description', '$price', '$unit', '$remain')";
         if (mysqli_query($link, $sql)) {
-            header("Location: products.php#products");
+            header("Location: products.php");
         } else {
             echo "Error: " . $sql . ":-" . mysqli_error($link);
         }
@@ -177,7 +177,7 @@ if(isset($_POST['submit'])){
                         </div>
 
                         <input type="submit" class="btn btn-primary" value="Submit" name="submit">
-                        <a href="home.php" class="btn btn-danger">Cancel</a>
+                        <a href="products.php" class="btn btn-danger">Cancel</a>
                     </form>
                 </div>
             </div>

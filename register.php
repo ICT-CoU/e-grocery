@@ -1,4 +1,5 @@
- <?php
+<?php
+ob_start();
 // Include config file
 require_once "./admin/config.php";
  
@@ -61,15 +62,13 @@ if(isset($_POST['submit'])){
                 $image_err = "File is not a valid image type.";
             }
         }
-        ob_start();
         // Prepare an insert statement
         $sql = "INSERT INTO users (image, name, email, password) VALUES ('$image', '$name', '$email', '$password')";
         if (mysqli_query($link, $sql)) {
-            header("Location: index.php");
+            echo '<meta http-equiv="refresh" content="0; URL=index.php">';
         } else {
             echo "Error: " . $sql . ":-" . mysqli_error($link);
         }
-        ob_end_flush();
     }
     // Close connection
     mysqli_close($link);

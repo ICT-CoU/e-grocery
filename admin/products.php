@@ -27,9 +27,9 @@
     <div class="container mt-3">
         <nav class="menu">
             <div class="row text-center">
-                <a href="users.php#users" class="btn btn-info font-weight-bold col-2 offset-2">Users List</a>
-                <a href="products.php#products" class="btn btn-warning font-weight-bold col-2 offset-1">Products List</a>
-                <a href="index.php" class="btn btn-danger font-weight-bold col-2 offset-1">Log Out</a>
+                <a href="users.php" class="btn btn-info font-weight-bold col-2 offset-2">Users List</a>
+                <a href="products.php" class="btn btn-warning font-weight-bold col-2 offset-1">Products List</a>
+                <a href="../index.php" class="btn btn-danger font-weight-bold col-2 offset-1">Log Out</a>
             </div>
         </nav>
     </div>

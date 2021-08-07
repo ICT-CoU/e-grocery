@@ -117,7 +117,7 @@ while($row = mysqli_fetch_array($result)) {
             $id = $_POST['id'];
             $sql = "UPDATE products SET id = '$id', image = '$image', name = '$name', description = '$description', price = '$price', unit = '$unit', remain = '$remain' where id = '$id'";
             if (mysqli_query($link, $sql)) {
-                header("Location: products.php#products");
+                header("Location: products.php");
             } else {
                 echo "Error: " . $sql . ":-" . mysqli_error($link);
             }
@@ -204,7 +204,7 @@ while($row = mysqli_fetch_array($result)) {
                             </div>
                         </div>
                         <input type="submit" class="btn btn-warning" value="Update" name="update">
-                        <a href="products.php#products" class="btn btn-danger">Cancel</a>
+                        <a href="products.php" class="btn btn-danger">Cancel</a>
                     </form>
                 </div>
             </div>
