@@ -4,7 +4,7 @@
 </br>
 
 # How It Looks Like
-### **[Click to Explore Live! ](e-grocery10.000webhostapp.com/)**
+### **[Click to Explore Live! ](http://e-grocery10.000webhostapp.com/)**
 
 </br>
 
