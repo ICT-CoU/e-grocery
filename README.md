@@ -14,7 +14,7 @@
 
 # How to run
 
-* ### [Click to download the zip file! ](https://github.com/saiful-70/e-shop/archive/refs/heads/main.zip)(file size is about 30mb)
+* ### [Click to download the zip file! ](https://github.com/saiful-70/e-grocery/archive/refs/heads/main.zip)(file size is about 30mb)
 
 * Extract the zip file
 * Rename the extracted folder to __'e-grocery'__
