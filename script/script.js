@@ -3,15 +3,13 @@ const cart = document.getElementById("cart");
 const cartItems = document.getElementById("cart-items");
 const cartPrice = document.getElementById("cart-price");
 const modalTableBody = document.getElementById("modal-tbody");
-const form = document.getElementById("form");
-const registerBtn = document.getElementById("register-btn");
 
 // registerBtn.addEventListener('click', (e) => {
 //   window.location.reload();
 // })
-form.addEventListener('submit', (e) => {
-  window.location.reload()
-})
+// form.addEventListener('submit', (e) => {
+//   window.location.reload()
+// })
 
 
 let data = {
