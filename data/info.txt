@@ -31,24 +31,3 @@ create TABLE users(
     password char(30),
     PRIMARY KEY(email)
     )
-
-
-
-----------------------------------------------------------------
-Hosting to 000webhostapp.com
---------------
-
-----------------
-site information
------------------
-site-name : e-grocery10.000webhostapp.com
-username : e-grocery10
-password : H&hqrlzX@UmKHPWg38W2
-
----------------------
-database information
----------------------
-server/host : localhost
-database name : id17379126_grocery
-username : id17379126_root
-password : VX/mv_5KF#%G</dO
