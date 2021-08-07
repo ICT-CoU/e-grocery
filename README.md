@@ -1,9 +1,10 @@
-# e-shop
+# e-Grocery
 <p>E-grocery is mainly an online grocery store</p>
 
 </br>
 
-# How It Looks Like
+# Take a look
+
 ### **[Click to Explore Live! ](http://e-grocery10.000webhostapp.com/)**
 
 </br>
@@ -12,7 +13,7 @@
 
 </br>
 
-# How to run
+# Run in your local server
 
 * ### [Click to download the zip file! ](https://github.com/saiful-70/e-grocery/archive/refs/heads/main.zip)(file size is about 30mb)
 
