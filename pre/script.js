@@ -35,7 +35,7 @@ products.addEventListener("click", (e) => {
     const priceHtml = `<span>$ ${data.price}</span>`;
     const modalHtml = `<tr> <td id="product-name">${productName}</td> <td id="product-qty">${productQty}</td> <td id="product-price">${
       productPrice * productQty
-    }</td> <td><a href="#products" class="btn btn-product" id="delete-item">Delete</a></td> </tr>`;
+    }</td> <td><button type="button" class="btn-product" id="delete-item">Delete</button></td> </tr>`;
 
     cartItems.innerHTML = itemHtml;
     cartPrice.innerHTML = priceHtml;

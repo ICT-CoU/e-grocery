@@ -199,9 +199,9 @@
                                         <input type="number" id="product-qty" name="qty" value="1" />
                                         </div>';
 
-                                        echo '<a href="#products" class="btn btn-product" id="add-item">
+                                        echo '<button type="button" class="btn-product" id="add-item">
                                         Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        </a>';
+                                        </button>';
 
                                     echo '</div>';
 
