@@ -3,80 +3,63 @@ const cart = document.getElementById("cart");
 const cartItems = document.getElementById("cart-items");
 const cartPrice = document.getElementById("cart-price");
 const modalTableBody = document.getElementById("modal-tbody");
-
-// registerBtn.addEventListener('click', (e) => {
-//   window.location.reload();
-// })
-// form.addEventListener('submit', (e) => {
-//   window.location.reload()
-// })
-
+const products = document.getElementById("products");
 
 let data = {
   items: 0,
   price: 0,
-  deletedItem: 0,
-  deletedPrice: 0,
 };
 
-addProduct.forEach((el) => {
-  el.addEventListener("click", (e) => {
+products.addEventListener("click", (e) => {
+  if (e.target.id === "add-item") {
+    let productQtyValue = e.target.parentNode.querySelector("#product-qty");
+    const productQty = parseInt(productQtyValue.value);
+
     const productName =
       e.target.parentNode.querySelector("#product-name").textContent;
-    const productPrice =
-      e.target.parentNode.querySelector("#product-price").textContent;
-
-    const a = e.target.parentNode
-      .querySelector("#product-price")
-      .textContent.split("৳");
-    console.log(a);
-    data.price += parseInt(
+    const productPrice = parseInt(
       e.target.parentNode
         .querySelector("#product-price")
         .textContent.split("৳")[1]
     );
+
+    // Data structure
+    data.price += productPrice * productQty;
     data.items++;
 
-    let price = 0,
-      item = 0;
-
-    modalTableBody.addEventListener("click", (e) => {
-      const element = e.target.parentNode.parentNode;
-      data.deletedPrice = parseInt(
-        element.querySelector("#product-price").textContent.split("৳")[1]
-      );
-      data.deletedItem = 1;
-
-      for (let i = 1; i <= 1; i++) {
-        price += data.deletedPrice;
-        item += data.deletedItem;
-
-        const itemHtml = `<i class="fa fa-shopping-cart" aria-hidden="true"></i> <br> <span>${
-          data.items - item
-        } items</span>`;
-        const priceHtml = `<span>$ ${data.price - price}</span>`;
-
-        cartItems.innerHTML = itemHtml;
-        cartPrice.innerHTML = priceHtml;
-
-        data.deletedItem = 0;
-        data.deletedPrice = 0;
-      }
-
-      element.remove();
-    });
-
-    data.price -= price;
-
+    // Read into DOM
     const itemHtml = `<i class="fa fa-shopping-cart" aria-hidden="true"></i> <br> <span>${data.items} items</span>`;
     const priceHtml = `<span>$ ${data.price}</span>`;
-    const modalHtml = `<tr> <td id="product-name">${productName}</td> <td id="product-price">${productPrice}</td> <td><a href="#products" class="btn btn-product" id="delete-item">Delete</a></td> </tr>`;
+    const modalHtml = `<tr> <td id="product-name">${productName}</td> <td id="product-qty">${productQty}</td> <td id="product-price">${
+      productPrice * productQty
+    }</td> <td><a href="#products" class="btn btn-product" id="delete-item">Delete</a></td> </tr>`;
 
     cartItems.innerHTML = itemHtml;
     cartPrice.innerHTML = priceHtml;
 
     modalTableBody.insertAdjacentHTML("beforeend", modalHtml);
 
-    // price = 0;
-  });
+    productQtyValue.value = 1; //reseting value
+  }
+});
+
+//delete item
+const deleteItem = document.getElementById("delete-item");
+
+modalTableBody.addEventListener("click", (e) => {
+  if (e.target.id === "delete-item") {
+    const modalPrice = parseInt(
+      e.target.parentNode.parentNode.querySelector("#product-price").textContent
+    );
+
+    data.price -= modalPrice;
+    data.items--;
+
+    const priceHtml = `<span>$ ${data.price}</span>`;
+    const itemHtml = `<i class="fa fa-shopping-cart" aria-hidden="true"></i> <br> <span>${data.items} items</span>`;
+    cartPrice.innerHTML = priceHtml;
+    cartItems.innerHTML = itemHtml;
+
+    e.target.parentNode.parentNode.remove();
+  }
 });

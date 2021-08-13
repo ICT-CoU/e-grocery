@@ -49,11 +49,21 @@ Reusable components
     transform: scale(1.1);
 }
 
-.btn-product:link,
-.btn-product:visited {
+.btn-product {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ee5253;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 5px 25px;
+    transition : .3s;
+    border: none;
     font-size: 20px;
     margin: 0;
-    background-color: #ee5253;
+}
+
+.btn-product:hover {
+    transform: scale(1.1);
 }
 
 
@@ -333,7 +343,7 @@ Products
 }
 
 .product-card {
-    height: 400px;
+    height: 430px;
     width: 250px;
     background-color: #c8d6e5;
     color: #222f3e;
@@ -380,6 +390,24 @@ Products
     height: auto;
 }
 
+
+.product-qty {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.product-qty input {
+    width: 20%;
+    height : 30px;
+    margin-left: 5px;
+    border: 2px solid #ee5253;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
 
 /* 
 ================================================================

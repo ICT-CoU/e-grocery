@@ -72,6 +72,7 @@
         <thead>
             <tr>
             <th scope="col">Product Name</th>
+            <th scope="col">Product Quantity</th>
             <th scope="col">Product Price</th>
             <th scope="col">Handle</th>
             </tr>
@@ -192,6 +193,11 @@
                                         echo '<h6 class=""> <span class="product-price" id="product-price">&#2547; ' . $row['price']. '</span>/'. $row['unit'] .'</h6>';
 
                                         echo '<p class="product-description">'. $row['description'] .'</p>';
+
+                                        echo '<div class="product-qty">
+                                        <label for="qty">Quantity : </label>
+                                        <input type="number" id="product-qty" name="qty" value="1" />
+                                        </div>';
 
                                         echo '<a href="#products" class="btn btn-product" id="add-item">
                                         Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i>

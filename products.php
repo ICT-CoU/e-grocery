@@ -70,6 +70,7 @@
         <thead>
             <tr>
             <th scope="col">Product Name</th>
+            <th scope="col">Product Quantity</th>
             <th scope="col">Product Price</th>
             <th scope="col">Handle</th>
             </tr>
@@ -90,17 +91,6 @@
     <section class="products all-products" id="products">
         <div class="container">
             <div class="row">
-                <!-- <div class="col-md-3">
-                    <div class="product-card">
-                        <img src="./images/wheat.jpeg" alt="wheat" class="product-image">
-                        <h5 class="product-name">Wheat</h5>
-                        <h6 class=""><span class="product-price" id="product-price">$99</span>/kg</h6>
-                        <p class="product-description">This is a product</p>
-                        <a href="#products" class="btn btn-product" id="add-item">
-                            Add to Bag <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div> -->
 
                 <?php
                     // Include config file
@@ -122,9 +112,14 @@
 
                                         echo '<p class="product-description">'. $row['description'] .'</p>';
 
-                                        echo '<a href="#products" class="btn btn-product" id="add-item">
+                                        echo '<div class="product-qty">
+                                        <label for="qty">Quantity : </label>
+                                        <input type="number" id="product-qty" name="qty" value="1" />
+                                        </div>';
+
+                                        echo '<button type="button" class="btn-product" id="add-item">
                                         Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        </a>';
+                                        </button>';
 
                                     echo '</div>';
 
